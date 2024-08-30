@@ -186,3 +186,31 @@ footer nav ul {
 	margin: 2em
 }
 
+.filters {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+	padding-bottom: 30px;
+}
+
+.category-item {	
+	display: flex;
+	gap: 10px;
+	border: solid 1px;
+	border-color: #1D6154;
+	border-radius: 100px;
+	margin: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #1D6154;
+	font-size: 1.1em;
+	font-family: 'Syne';
+}
+
+.category-item:hover {
+	color: white;
+	background-color: #1D6154;
+}
