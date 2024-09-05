@@ -214,3 +214,65 @@ footer nav ul {
 	color: white;
 	background-color: #1D6154;
 }
+
+html {
+	background-color: #FFFEF8;
+}
+
+footer {
+	background-color: white;
+}
+
+#nav-connexion {
+	font-weight: bold;
+}
+
+.Log-In {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	margin: auto;
+}
+
+.form-login {
+	display: flex;
+	flex-direction: column;
+}
+
+.email {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+input[type="email"] {
+	width: 300px;
+	height: 35px;
+	margin-top: 5px;
+}
+
+input[type="password"]{
+	width: 300px;
+	height: 35px;
+	margin-top: 5px;
+}
+
+.mdp {
+	display: flex;
+	flex-direction: column;
+}
+
+.Log-In h2 {
+	text-align: center;
+}
+
+.forgotten-password {
+	text-align: center;
+	font-weight: bold;
+}
+
+.forgotten-password:hover {
+	text-decoration: underline;
+}
