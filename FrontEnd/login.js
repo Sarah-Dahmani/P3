@@ -1,13 +1,10 @@
-function isLoggedIn() {
-    return !!window.localStorage.getItem("token");
-}
 const loggedIn = isLoggedIn();
 
 //écoute event click sur le bouton se connecter//
 const logInForm = document.getElementById("connexion");
 logInForm.addEventListener("submit", function (event) {
-  event.preventDefault();
-  //Récupérer les valeurs entrées par l'utilisateur//
+    event.preventDefault();
+  //Récupération des valeurs entrées par l'utilisateur//
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("pass").value.trim();
 
@@ -16,12 +13,12 @@ logInForm.addEventListener("submit", function (event) {
     email: email,
     password: password,
   };
-  logIn(logInData);
+    logIn(logInData);
 });
 
 //fonction pour stocker les valeurs du token dans le localStorage et rediriger vers la page index
 async function logIn(logInData) {
-  try {
+    try {
     const response = await fetch("http://localhost:5678/api/users/login", {
       method: "post",
       headers: {
@@ -48,7 +45,7 @@ async function logIn(logInData) {
 
 //fonction pour afficher des messages d'erreurs
 function handleErrors(response) {
-  switch (response.status) {
+    switch (response.status) {
     case 401:
     case 404:
       errorMessage = "Erreur dans l’identifiant ou le mot de passe";
@@ -57,7 +54,7 @@ function handleErrors(response) {
       errorMessage = "Erreur inconnue";
   }
 
-  let errorDiv = document.getElementById("login-error");
-  errorDiv.innerText = errorMessage;
-  errorDiv.style.visibility = "visible";
+    let errorDiv = document.getElementById("login-error");
+    errorDiv.innerText = errorMessage;
+    errorDiv.style.visibility = "visible";
 }

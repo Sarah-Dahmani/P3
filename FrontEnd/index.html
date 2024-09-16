@@ -27,7 +27,7 @@
 			<ul>
 				<li>projets</li>
 				<li>contact</li>
-				<li id="nav-connexion"><a href="login.html"></a>login</li>
+				<li id="nav-connexion"></li>
 				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 			</ul>
 		</nav>
@@ -53,40 +53,24 @@
 		<section id="portfolio">
 			<div class="Projets">
 				<h2>Mes Projets</h2>
-				<div id="btn-modifier" style="display: none;">
-					<i class="fa-regular fa-pen-to-square black-icone" aria-hidden="true"></i>
+				
+					<div id="btnModifier">
+						
+					<i class="fa-regular fa-pen-to-square black-icone" id="iconeModifier" aria-hidden="true"></i>
 					<a href="#modal" id="btn-modifier" class="js-modal">modifier</a>
-					<aside id="modal" class="modal-container" role="dialog" arie-hidden="true"
-						aria-modal="false" style="display: none;">
-						<div class="modal-wrapper js-stop-modal">
-							<button class="js-close-modal"><i class="fa-solid fa-xmark"></i></button>
-							<button id="return" style="display: none"><i class="fa-solid fa-arrow-left"></i></button>	
-							<div id="modal-gallery">
-								<span class="title-modal">Galerie photo</span>
-								<div id="modal-works-list">
 
-								</div>
-								<input type="submit" class="btn-modale" id="addPhoto" value="Ajouter une photo"/>
-							</div>
-							<div id="modal-add" style="display: none">															
-								<span class="title-modal">Ajout photo</span>
-								<form method="post" id="form-modal" enctype="multipart/form-data">
-									<input type="file" name="file">
-									<label for="Titre">Titre</label>
-									<input type="text" name="title">
-								<label for ="Categories">Categories</label>
-								<select name="select-categorie" id="selectCategorie">
+					<div id="modal" class="modal-container" role="dialog" aria-hidden="true" aria-modal="false">
 
-								</select>
-								<input type="submit" class="btn-modale" value="Valider"/>
-							</form>
-							</div>
-						</div>
-					</aside>
+					</div>
+				</div>
+			</div>
 
+			<div class="filters" id="filters-works">
 
-		<div class="filters" id="filters-works"></div>
-		<div class="gallery" id="gallery-works"></div>
+			</div>
+			<div class="gallery" id="gallery-works">
+
+			</div>
 		</section>
 		<section id="contact">
 			<h2>Contact</h2>
@@ -114,10 +98,9 @@
 			</ul>
 		</nav>
 	</footer>
-	<script src="main.js"></script>
 	<script src="authentification.js"></script>
+	<script src="main.js"></script>
 	<script src="modal.js"></script>
-
-<footer>
 </body>
+
 </html>
