@@ -152,8 +152,8 @@ function closeModal(event) {
     setModalView("modal-gallery");
     document.getElementById("return").style.display = "none";
     
-    const modal = document.getElementById("modal");
-    const overlay = document.getElementById("modal-overlay");
+    let modal = document.getElementById("modal");
+    let overlay = document.getElementById("modal-overlay");
   
     modal.style.display = "none";
     overlay.style.display = "none"; // Masquer l'overlay
